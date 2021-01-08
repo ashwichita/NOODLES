@@ -1,0 +1,1092 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #6f74af;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/****************FIRST 100VH (title)*****************************/
+
+#main-section{
+    width: 80vw;
+    height: 160vh;
+    background: #64aaa4;
+    position: relative;
+    margin: auto;
+    top: 5vh;
+    margin-bottom: 8vh;
+    -webkit-box-shadow: 9px 10px 22px -4px rgba(84,57,102,0.88);
+    -moz-box-shadow: 9px 10px 22px -4px rgba(84,57,102,0.88);
+    box-shadow: 9px 10px 22px -4px rgba(84,57,102,0.88);
+    overflow: hidden;
+    z-index: 0;
+    
+}
+
+#title-section{
+    width: 80vw;
+    height: 100vh;
+}
+#title-container{
+    width: 100vw;
+    height: 27vh;
+    margin-left: -15vw;
+    margin-top: 20vh;
+    transform: rotate(-7deg);
+    background: #105376;
+    border: 8vh #616198 solid;
+    z-index: 1;
+    transition: opacity .5s ease-in;
+    
+}
+#title{
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 20rem;
+    color: #f1f1f1;
+    position: absolute;
+    margin-left: 20vw;
+    margin-top: -15vh;
+    z-index: 1;
+
+}
+#title-img{
+    margin-top: -20vh;
+    margin-left: 60vw;
+    width: 25vw;
+    color: #f1f1f1;
+    animation: swirl 5s infinite linear reverse;
+}
+@keyframes swirl{
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)};
+}
+
+#noodle-bg-1{
+    width: 60vw;
+    position: relative;
+    top: -10vh;
+    left: 30vw;
+    transform: rotate(5deg);
+    opacity: .4;
+    z-index: -1;
+}
+
+/****************SECOND 100VH (favorites)*****************************/
+
+#favorites-section{
+    width: 70vw;
+    height: 45vh;
+    padding-bottom: 15vh;
+}
+
+.favorites-list{
+    width: 50vw;
+    height: 60vh;
+    position: absolute;
+    top: 70vh;
+    left: -80vw;
+    transform: rotate(-2deg);
+    list-style-type: none;
+    opacity: 0;
+    transition: 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.favorites-list.active{
+    left: 2vw;
+    opacity: 1;
+}
+
+.favorites-item{
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+    width: 100%;
+    border: 15px #49766a solid;
+    background: #743c3c;
+    transform: translateX(-100vw);
+    -webkit-box-shadow: 9px 10px 22px -4px rgba(0, 0, 0, 0.88);
+    -moz-box-shadow: 9px 10px 22px -4px rgba(0, 0, 0, 0.88);
+    box-shadow: 9px 10px 22px -4px rgba(0, 0, 0, 0.88);
+    margin-bottom: 1vh;
+}
+
+.favorites-item:nth-of-type(1){
+    transform: rotate(2deg) scale(.9);
+}
+.favorites-item:nth-of-type(2){
+    transform: rotate(-1deg) translateY(-3vh) translateX(1vw) scale(.9);
+}
+.favorites-item:nth-of-type(3){
+    transform: rotate(1deg) translateY(-5vh) translateX(-2vw) scale(1);
+}
+.favorites-item img{
+    width: 10vw;
+    padding: 1vw;
+}
+.favorites-item-text{
+    padding-left: 3vw;
+    width: 40vw;
+    font-family: 'Sue Ellen Francisco', cursive;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.1rem;
+}
+.favorites-item-text p{
+    font-family: "Courier New", Courier, monospace;
+    line-height: 1.5rem;
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    #main-section{
+        width: 90vw;
+        height: 330vh;
+        margin-bottom: 0vh;
+    }
+    
+    #title-container{
+        width: 110vw;
+        height: 35vh;
+    }
+    
+    #title{
+        font-size: 10rem;
+    }
+    
+    #favorites-section{
+        width: 90vw;
+    }
+    
+    .favorites-list{
+        width: 100vw;
+    }
+    
+    .favorites-list.active{
+        left: -10vw;
+    }
+    
+    .favorites-item{
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .favorites-item:nth-of-type(1){
+        transform: rotate(2deg) scale(.7);
+    }
+    .favorites-item:nth-of-type(2){
+        transform: rotate(-1deg) translateY(-20vh) translateX(1vw) scale(.8);
+    }
+    .favorites-item:nth-of-type(3){
+        transform: rotate(1deg) translateY(-25vh) translateX(-2vw) scale(.9);
+    }
+    
+    .favorites-item img{
+        height: 20vw;
+        width: 20vw;
+    }
+  
+}
+/****************NOODLE SPACER*****************************/
+
+
+#spacer-section{
+    transform: translateY(50vh);
+    transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    width: 90vw;
+    height: 30vh;
+    background: #ada057;
+    position: relative;
+    margin: auto;
+    top: 5vh;
+    margin-bottom: 8vh;
+    -webkit-box-shadow: 9px 10px 22px -4px rgba(84,57,102,0.88);
+    -moz-box-shadow: 9px 10px 22px -4px rgba(84,57,102,0.88);
+    box-shadow: 9px 10px 22px -4px rgba(84,57,102,0.88);
+    overflow: hidden;
+}
+
+#noodles-spacer{
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.noodles-spacer-item{
+    width: 4vw;
+    margin: 1vw;
+    transform: translateX(80vw);
+}
+
+.noodles-spacer-2-item{
+    width: 4vw;
+    margin: 0vw;
+    transform: translateX(-80vw);
+}
+
+.noodles-spacer-item:nth-of-type(1){
+    transition: .3s ease-in-out;
+}
+.noodles-spacer-item:nth-of-type(2){
+    transition: .4s ease-in-out;
+}
+.noodles-spacer-item:nth-of-type(3){
+    transition: .5s ease-in-out;
+}
+.noodles-spacer-item:nth-of-type(4){
+    transition: .6s ease-in-out;
+}
+.noodles-spacer-item:nth-of-type(5){
+    transition: .7s ease-in-out;
+}
+.noodles-spacer-item:nth-of-type(6){
+    transition: .8s ease-in-out;
+}
+.noodles-spacer-2-item:nth-of-type(1){
+    transition: .3s ease-in-out;
+}
+.noodles-spacer-2-item:nth-of-type(2){
+    transition: .4s ease-in-out;
+}
+.noodles-spacer-2-item:nth-of-type(3){
+    transition: .5s ease-in-out;
+}
+.noodles-spacer-2-item:nth-of-type(4){
+    transition: .6s ease-in-out;
+}
+.noodles-spacer-2-item:nth-of-type(5){
+    transition: .7s ease-in-out;
+}
+.noodles-spacer-2-item:nth-of-type(6){
+    transition: .8s ease-in-out;
+}
+
+#quote{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    font-weight: 100;
+    color: #f1f1f1;
+}
+
+
+
+/****************FOOD SECTION*****************************/
+
+.food-modal{
+    width: 90vw;
+    height: 70vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-200%);
+    z-index: 1;
+    border: 3vw #743c3c solid;
+    transition: .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.food-modal.active{
+    transform: translateX(-50%);
+}
+
+#food-title{
+    text-align: center;
+    font-family: 'Sue Ellen Francisco', cursive;
+    color: white;
+    font-size: 4rem;
+    transform: translateX(100vw);
+    transition: .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+}
+#food-section{
+    width: 40vw;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.food-element{
+    width: 15vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.food-element img{
+    max-width: 100%;
+    max-height: 100%;
+    border: 25px #743c3c solid;
+    -webkit-box-shadow: 9px 10px 22px -4px rgba(84,57,102,0.88);
+    -moz-box-shadow: 9px 10px 22px -4px rgba(84,57,102,0.88);
+    box-shadow: 9px 10px 22px -4px rgba(84,57,102,0.88);
+}
+
+.food-element:nth-of-type(1){
+    transform: translateX(-100vw);
+    transition: .6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.food-element:nth-of-type(2){
+    transform: translateX(-100vw);
+    transition: .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.food-element:nth-of-type(3){
+    transform: translateX(-100vw);
+    transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.food-element:nth-of-type(4){
+    transform: translateX(100vw);
+    transition: .6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.food-element:nth-of-type(5){
+    transform: translateX(100vw);
+    transition: .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.food-element:nth-of-type(6){
+    transform: translateX(100vw);
+    transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.food-element.active{
+    transform: translateX(0vw);
+}
+.food-element:hover{
+    transform: scale(1.1);
+    transition: .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    cursor: pointer;
+}
+
+
+
+
+
+/****************negde kasnije 100VH (contact)*****************************/
+
+#contact-section{
+    width: 80vw;
+    height: 180vh;
+    background: #64aaa4;
+    background-image: url(media/noodles-bg-2.png);
+    background-repeat: no-repeat;
+    position: relative;
+    margin: auto;
+    top: 10vh;
+    margin-bottom: 8vh;
+    -webkit-box-shadow: 9px 10px 22px -4px rgba(84,57,102,0.88);
+    -moz-box-shadow: 9px 10px 22px -4px rgba(84,57,102,0.88);
+    box-shadow: 9px 10px 22px -4px rgba(84,57,102,0.88);
+    overflow: hidden;
+    z-index: 0;
+    transform: translateY(50vh);
+    transition: transform 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#contact-info{
+    width: 30vw;
+    height: 45vh;
+    margin-left: 5vw;
+    margin-top: 30vh;
+    display: flex;
+    flex-direction: column;
+    transform: rotate(-3deg);
+    
+}
+
+.contact-info-item{
+    display: flex;
+    align-items: center;
+    transform: translateX(-50vw);
+}
+
+.contact-info-item:nth-of-type(1){
+    transition: .5s cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+}
+.contact-info-item:nth-of-type(2){
+    transition: .7s cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+}
+.contact-info-item:nth-of-type(3){
+    transition: .9s cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+}
+
+
+#contact-info img{
+    width: 5vw;
+    margin-right: 1vw;
+}
+
+#contact-info p{
+    font-family: 'Indie Flower', cursive;
+    color: #f1f1f1;
+    font-size: 2rem;
+    
+}
+
+#contact-form-container{
+    width: 30vw;
+    height: 70vh;
+    position: absolute;
+    right: 2vw;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#contact-form-container h3{
+    color: white;
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 3rem;
+    line-height: 0;
+    font-weight: 100;
+    margin: 3vh;
+}
+
+.contact-form{
+    background: #743c3c;
+    border: 0;
+    outline: none;
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+    padding-left: 1vh;
+
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.39);
+}
+
+#contact-name{
+    width: 50%;
+    height: 4vh;
+}
+#contact-email{
+    width: 60%;
+    height: 4vh;
+}
+#contact-text{
+    width: 100%;
+    height: 30vh;
+    padding-top: 1vh;
+}
+#contact-button{
+    width: 10vw;
+    height: 5vh;
+    margin-top: 2vh;
+    text-align: center;
+    background: #743c3c;
+    line-height: 5vh;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.2rem;
+}
+
+
+#map{
+    margin-top: 25vh;
+    width: 90vw;
+    transform: rotate(5deg) translateX(-5vw);
+    z-index: 0;
+}
+
+#map-title{
+    position: absolute;
+    margin-top: 5vh;
+    padding-right: 10vw;
+    right: -5vh;
+    color: white;
+    transform: rotate(3deg);
+    z-index: 1;
+    margin-bottom: -4vh;
+    font-size: 7rem;
+    font-family: 'Sue Ellen Francisco', cursive;
+    display: inline-block;
+    background: #743c3c;
+    width: 110%;
+    text-align: end;
+}
+
+#map-marker{
+    position: relative;
+    margin: auto;
+    margin-top: 0;
+    background-image: url(media/map-marker.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10vw;
+    height: 20vh;
+}
+
+#map-marker-title{
+    text-align: center;
+    font-family: 'Sue Ellen Francisco', cursive;
+    color: #ada057;
+    font-size: 5rem;
+    line-height: 0;
+}
+
+/****************OWNER*****************************/
+
+#owner-section{
+    width: 90vw;
+    height: 70vh;
+    margin: auto;
+    background: #ada057;
+    -webkit-box-shadow: 9px 10px 22px -4px rgba(84,57,102,0.88);
+    -moz-box-shadow: 9px 10px 22px -4px rgba(84,57,102,0.88);
+    box-shadow: 9px 10px 22px -4px rgba(84,57,102,0.88);
+    margin-bottom: 10vh;
+    transform: rotate(1deg);
+}
+
+#owner-section h2{
+    text-align: center;
+    color: #743c3c;
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 3.5rem;
+
+}
+
+#owner-container{
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    transform: translateX(-100vw);
+    transition: transform 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#owner-image{
+    border: 20px #743c3c solid;
+    height: 400px;
+    width: 400px;
+    background-image: url(media/ron_swanson_jpeg.jpg);
+    background-size: contain;
+    transition: .1s ease-out;
+}
+
+#owner-image:hover{
+    background-image: url(media/ron_swanson_gif.gif);
+}
+
+#owner-text{
+    width: 40vw;
+}
+
+#owner-text p{
+    margin-bottom: 2vh;
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+/********************FOOTER*****************************/
+
+#footer{
+    width: 80vw;
+    margin: auto;
+    height: 7vh;
+    background: #743c3c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+#footer h3{
+    margin-left: 3vw;
+    font-family: 'Sansita Swashed', cursive;    
+    color: #64aaa4;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: .3s;
+}
+
+#footer h3:hover{
+    transform: scale(1.1);
+}
+
+#social-media-container{
+    margin-right: 3vw;
+}
+
+#social-media-container img{
+    max-height: 5vh;
+    margin-left: 1vw;
+    transition: .3s;
+}
+
+#social-media-container img:hover{
+    transform: scale(1.1);
+}
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    #main-section{
+        width: 95vw;
+        height: 180vh;
+        top: 2vh;
+    }
+    
+    #title-container{
+        margin-left: -20vw;
+        width: 130vw;
+    }
+    #title{
+        font-size: 6rem;
+        margin-top: 0vh;
+        margin-left: 10vw;
+    }
+    #title-img{
+        margin-top: -5vh;
+        width: 40vw;
+    }
+    
+    #noodle-bg-1{
+        width: 100vw;
+        top: 10vh;
+    }
+    #favorites-section{
+        width: 100vw;
+        height: 100vh;
+        left: -100vw;
+    }
+    .favorites-list{
+        width: 100vw;
+        margin-left: -20vw;
+    }
+    .favorites-list.active{
+        left: 0vw;
+    }
+    
+    .favorites-item img{
+        width: 30vw;
+        max-height: 20vh;
+        padding: 1vw;
+        margin: auto;
+    }
+    .favorites-item-text{
+        width: 60vw;
+    }
+    .favorites-item p{
+        font-size: .9rem;
+        
+    }
+    
+    .favorites-item:nth-of-type(1){
+        transform: rotate(2deg) scale(.9);
+    }
+    .favorites-item:nth-of-type(2){
+        transform: rotate(-1deg) translateY(-3vh) translateX(1vw) scale(.9);
+    }
+    .favorites-item:nth-of-type(3){
+        transform: rotate(1deg) translateY(-5vh) translateX(-2vw) scale(.9);
+    }
+        
+    #spacer-section{
+        height: 40vh;
+        width: 95vw;
+    }
+    
+    #quote{
+        font-size: 1.6rem;
+        width: 93vw;
+    }
+    
+    .noodles-spacer-item{
+        width: 4vh;
+        margin: 3vh;
+    }
+     .noodles-spacer-2-item{
+        width: 4vh;
+        margin: 3vh;
+    }
+    
+    #food-section{
+        width: 95vw;
+    }
+    .food-element{
+        width: 40vw;
+    }
+    .food-element img{
+        border: 10px #743c3c solid;
+    }
+    
+    #contact-section{
+        width: 93vw;
+        height: 230vh;
+        background-size: contain;
+    }
+    
+    #contact-form-container{
+        width: 80vw;
+    }
+    
+    #contact-form-container h3{
+        font-size: 2rem;
+    }
+    #contact-name{
+        height: 6vh;
+        width: 70%;
+    }
+    #contact-email{
+        height: 6vh;
+        width: 80%;
+    }
+    #contact-text{
+        height: 40vh;
+    }
+    #contact-button{
+        width: 20vw;
+        font-size: 1rem;
+    }
+    
+    #contact-info{
+        margin-top: 80vh;
+        width: 80vw;
+        height: 30vh;
+    }
+    
+    .contact-info-item{
+        transform: translateX(-200vw);
+        margin-bottom: 0;
+    }
+    
+    #contact-info p{
+        font-size: 1.2rem;
+    }
+    
+    #map-title{
+        margin-top: 13vh;
+        padding-right: 20vw;
+        font-size: 2rem;
+    }
+    
+    #map{
+        transform: rotate(-85deg) translateY(-50vw);
+        width: 200vw;
+        margin-top: 50vh;
+        z-index: 1;
+    }
+    
+    #map-marker{
+        width: 30vw;
+        margin-top: -35vh;
+        transform: rotate(10deg);
+        margin-right: 0;
+    }
+    
+    #map-marker-title{
+        margin-top: 7vh;
+        right: 5vw;
+        z-index: 2;
+        position: absolute;
+    }
+    
+    #owner-section{
+        margin-top: 25vh;
+        height: 100vh;
+
+    }
+    
+    #owner-section h2{
+        font-size: 2.1rem;
+    }
+    
+    #owner-container{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 110vh;
+    }
+    
+    #owner-text{
+        width: 80vw;
+        padding-bottom: 30vh;
+    }
+    
+    #owner-text p{
+        padding-top: 1vh;
+        font-size: .9rem;
+
+        
+    }
+    
+    #owner-image{
+        width: 250px;
+        min-height: 250px;
+        margin: auto;
+        border: none;
+        background-size: cover;
+    }
+    
+    #footer{
+        width: 100vw;
+        height: 15vh;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    #main-section{
+        width: 90vw;
+        height: 330vh;
+        margin-bottom: 0vh;
+    }
+    
+    #title-container{
+        width: 110vw;
+        height: 50vh;
+    }
+    
+    #title{
+        font-size: 10rem;
+    }
+    
+    #favorites-section{
+        width: 90vw;
+    }
+    
+    .favorites-list{
+        width: 100vw;
+    }
+    
+    .favorites-list.active{
+        left: -10vw;
+    }
+    
+    .favorites-item{
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .favorites-item:nth-of-type(1){
+        transform: rotate(2deg) scale(.7);
+    }
+    .favorites-item:nth-of-type(2){
+        transform: rotate(-1deg) translateY(-20vh) translateX(1vw) scale(.8);
+    }
+    .favorites-item:nth-of-type(3){
+        transform: rotate(1deg) translateY(-25vh) translateX(-2vw) scale(.9);
+    }
+    
+    .favorites-item img{
+        height: 20vw;
+        width: 20vw;
+    }
+    
+    
+    #spacer-section{
+        width: 100vw;
+        height: 60vh;
+        top: 15vh;
+    }
+    
+    #noodles-spacer{
+        width: 80vw;
+    }
+    
+    
+    #food-section{
+        margin-top: -20vh;
+        width: 90vw;
+        height: 120vh;
+        flex-direction: row;
+    }
+    
+    .food-element{
+        width: 25vw;
+        height: 40vh;
+    }
+
+    .food-element img{
+        border: 20px #743c3c solid;
+    }
+    
+    
+    #contact-section{
+        height: 300vh;
+        width: 90vw;
+    }
+    
+    #contact-info{
+        width: 40vw;
+        height: 45vh;
+    }
+   
+    #contact-info p{
+        font-size: 1.2rem;
+
+    }
+    
+    #contact-form-container{
+        width: 60vw;
+        height: 150vh;
+        top: 30vh;
+        
+    }
+
+    #contact-form-container h3{
+        font-size: 2rem;
+        line-height: 1rem;
+    }
+
+    #contact-name{
+        width: 50%;
+        height: 10vh;
+    }
+    #contact-email{
+        width: 60%;
+        height: 10vh;
+    }
+    #contact-text{
+        width: 90%;
+        height: 60vh;
+    }
+    #contact-button{
+        width: 20vw;
+        height: 10vh;
+        line-height: 10vh;
+        font-size: 1rem;
+    }
+    
+    #map{
+        margin-top: 120vh;
+        min-height: 120vh;
+        width: 100vw;
+    }
+
+    #map-title{
+        margin-top: 80vh;
+        font-size: 5rem;
+        
+    }
+    
+    
+    #owner-section{
+        width: 95vw;
+        height: 270vh;
+        margin-bottom: 20vh;
+        
+    }
+
+    #owner-container{
+        width: 80vw;
+        height: 220vh;
+        align-items: center;;
+        flex-direction: column;
+    }
+
+    #owner-image{
+        height: 300px;
+        width: 300px;
+        background-size: cover;
+    }
+
+    #owner-text{
+        width: 80vw;
+    }
+
+    #owner-text p{
+        margin-bottom: 10vh;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    
+    #footer{
+        width: 100vw;
+        height: 15vh;
+    }
+    #footer h3{
+        font-size: 1rem;
+    }
+
+    #social-media-container{
+        margin-right: 3vw;
+    }
+
+    #social-media-container img{
+        max-height: 10vh;
+        margin-left: 2vw;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1366px) {
+  
+    #title{
+        font-size: 14rem;
+    }
+    
+    .favorites-list{
+        top: 60vh;
+    }
+    
+    .noodles-spacer-item{
+        width: 3vw;
+    }
+    .noodles-spacer-2-item{
+        width: 3vw;
+    }
+    #quote{
+        font-size: 1.7rem;
+    }
+    
+    #food-section{
+        height: 90vh;
+    }
+    
+    #contact-info img{
+        width: 4vw;
+    }
+    #contact-info p{
+        font-size: 1.7rem;
+    }
+    
+    #contact-form-container h3{
+        font-size: 2rem;
+    }
+    
+    #owner-section{
+        height: 90vh;
+    }
+    
+    #owner-image{
+        width: 300px;
+        height: 300px;
+    }
+    
+    #owner-text p{
+        font-size: 1.3rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

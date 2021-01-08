@@ -1,0 +1,405 @@
+<html>
+    
+    <head>
+        <title>NOODLES</title>
+            <link rel = "icon" href = "media/PngItem_1081313.png"> 
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
+    </head>
+    
+<body>
+   
+   
+        
+    <!---------------------TITLE & FAVORITES--------------------------------->
+
+     <section id="main-section">    
+        <section id="title-section">
+                <div id="title-container">
+                    <h1 id="title">NOODLES</h1>
+                    <img id="title-img" src="media/PngItem_1081313_2.png">
+                </div>
+                <img id="noodle-bg-1" src="media/noodles-bg-1.png">
+        </section>
+        
+        <section id="favorites-section">
+                <ul class="favorites-list">
+                    <li class="favorites-item">
+                            <img src="media/favorites-list/chicken.png">
+                            <div class="favorites-item-text">
+                                <h3>CHICKEN NOODLES</h3>
+                                <p>100g nesto100g nesto100g nesto100g nesto100g nesto100g nesto 100g nesto 100g nesto 10</p>
+                            </div>
+</li>
+                    <li class="favorites-item">
+                            <img src="media/favorites-list/pig.png">
+                            <div class="favorites-item-text">
+                                <h3>PORK NOODLES</h3>
+                                <p>100g nesto100g nesto100g nesto100g nesto100g nesto100g nesto100g nesto 100g nesto 100g nesto </p>
+                            </div>
+</li>
+                    <li class="favorites-item">
+                            <img src="media/favorites-list/paprika.png">
+                            <div class="favorites-item-text">
+                                <h3>CHILLI NOODLES</h3>
+                                <p>100g nesto100g nesto100g nesto100g nesto100g nesto100g nesto100g nesto 100g nesto 100g</p>
+                            </div>
+</li>
+                </ul>
+        </section>
+        
+    </section>
+
+    <!------------------------SPACER--------------------------------->
+
+    
+        <section id="spacer-section">
+            <div id="noodles-spacer">
+                    <img class="noodles-spacer-item" src="media/noodles-spacer.png">
+                    <img class="noodles-spacer-item" src="media/noodles-spacer.png">
+                    <img class="noodles-spacer-item" src="media/noodles-spacer.png">
+                    <img class="noodles-spacer-item" src="media/noodles-spacer.png">
+                    <img class="noodles-spacer-item" src="media/noodles-spacer.png">
+                    <img class="noodles-spacer-item" src="media/noodles-spacer.png">
+            </div>
+        <h2 id="quote">"Peace will come to the world when the people have enough noodles to eat."</h2>
+        
+        <div id="noodles-spacer">
+                <img class="noodles-spacer-2-item" src="media/noodles-spacer.png">
+                <img class="noodles-spacer-2-item" src="media/noodles-spacer.png">
+                <img class="noodles-spacer-2-item" src="media/noodles-spacer.png">
+                <img class="noodles-spacer-2-item" src="media/noodles-spacer.png">
+                <img class="noodles-spacer-2-item" src="media/noodles-spacer.png">
+                <img class="noodles-spacer-2-item" src="media/noodles-spacer.png">
+        </div>
+        </section>         
+    
+    <!------------------------FOOD--------------------------------->
+        <h2 id="food-title">između ostalog</h2>
+        <section id="food-section">
+            <div class="food-modal"></div>
+
+            <div class=food-element><img src="media/food/0.jpeg"></div>
+            <div class=food-element><img src="media/food/1.jpeg"></div>
+            <div class=food-element><img src="media/food/2.jpeg"></div>
+            <div class=food-element><img src="media/food/3.jpeg"></div>
+            <div class=food-element><img src="media/food/4.jpeg"></div>
+            <div class=food-element><img src="media/food/5.jpeg"></div>
+        </section>
+    
+    <!------------------------CONTACT--------------------------------->
+    
+        <section id="contact-section">
+                <div id="contact-info">
+                    <div class="contact-info-item">
+                        <img src="media/contact-icons/address_icon.png">
+                        <p>Prvomajska Odmah Tu, 18000 Niš</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <img src="media/contact-icons/advice_icon.png">
+                        <p>Dule Kraljina, Sjajan Baja</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <img src="media/contact-icons/phone_icon.png">
+                        <p>0800 007 0777</p>
+                    </div>
+                </div>
+            
+                <form id="contact-form-container" method="post" action="contact-form-process.php">
+                    <h3>ime</h3>
+                <input id="contact-name" class="contact-form" name="name" type=text placeholder="ili nadimak">
+                    <h3>ime jl</h3>
+                <input id="contact-email" class="contact-form" name="email" type=text placeholder="ono sa @">
+                    <h3>poruka</h3>
+                <textarea id="contact-text" class="contact-form" name="message" placeholder="ukratko pliz"></textarea>
+                    <div id="contact-button" type="submit" value="Submit">šalji</div>
+                </form>
+            
+                <h2 id="map-title">GDE SMO?</h2>
+                <img id="map" src="media/map.jpg">
+        </section>
+    
+        <div id="map-marker"></div>
+        <h2 id="map-marker-title">baš ovde!</h2>
+    
+    <!------------------------OWNER--------------------------------->
+    
+        <section id="owner-section">
+            <h2>dule zmaj vam sprema hranu!</h2>
+            <div id="owner-container">
+                <div id="owner-image"></div>
+                <div id="owner-text">
+                <p>dule šampion izraziti favorit sprema nudle na poseban način. on svoje nudle pazi i ceni. njegove su nudle uvek dobro raspoložene i vole svog gazdu.</p>
+                <p>znači nudle ne da su dobre nego su fantastične!</p>
+                <p>vi ako ne verujete tu vam blizu pa bacite pogled. dule ima da vas ugosti kao kod babe kad odete. nemoj se stidite.</p>
+                <p>vaš dule.</p>
+                </div>
+            </div>
+            
+        </section>
+
+    <!------------------------FOOTER--------------------------------->
+            
+        <section id="footer">
+                <h3>created by Zorić Mitar</h3>
+                <div id="social-media-container">
+                    <img src="media/social_media/fb_icon.png">
+                    <img src="media/social_media/insta_icon.png">
+                </div>
+        </section>
+
+    
+        
+    
+    
+    
+        
+    
+    
+    
+    
+</body>   
+    
+    <script>
+        let titleContainer = document.getElementById('title-container');
+        let favoritesList = document.querySelector('.favorites-list');
+        let spacerSection = document.getElementById('spacer-section');
+        let noodlesSpacerItem = document.querySelectorAll('.noodles-spacer-item');
+        let noodlesSpacer2Item = document.querySelectorAll('.noodles-spacer-2-item');
+        let foodTitle = document.getElementById('food-title');
+        let foodElement = document.querySelectorAll('.food-element');
+        let foodModal = document.querySelector('.food-modal');
+        let contactSection = document.getElementById('contact-section');
+        let contactInfoItem = document.querySelectorAll('.contact-info-item');
+        let ownerContainer = document.getElementById('owner-container');
+        
+        
+        for (let i=0; i<foodElement.length; i++){
+            foodElement[i].addEventListener('click', function(){
+                foodModal.classList.add('active');
+                foodModal.style.backgroundImage = 'url(media/food/' + [i] + '.jpeg)';
+            });
+        }
+        foodModal.addEventListener('click', function(){
+           foodModal.classList.remove('active'); 
+        });
+        
+        
+        
+        if(window.innerWidth > 1366){
+        window.onscroll = function(){
+            let scrollPosition = window.scrollY;
+            if(scrollPosition < 1000){
+                titleContainer.style.transform = 'translateY(' + scrollPosition * .07 + 'vh) rotate(-7deg)';
+                titleContainer.style.opacity = 1;
+                spacerSection.style.transform = 'translateY(100vh) rotate(1deg)';
+            }else{
+                titleContainer.style.opacity = 0;
+            }
+            if(scrollPosition > 150 & scrollPosition < 1400){
+                favoritesList.classList.add('active');
+                foodTitle.style.transform = 'translateX(100vw) rotate(-3deg)';
+            }else{
+                favoritesList.classList.remove('active');
+            }
+            if(scrollPosition > 900){
+                noodlesSpacerItem.forEach(el => el.style.transform = 'translateX(0vw)');
+                noodlesSpacer2Item.forEach(el => el.style.transform = 'translateX(0vw)');
+                spacerSection.style.transform = 'translateY(0vh) rotate(1deg)';
+            }
+            if(scrollPosition < 1000 || scrollPosition > 1700){
+                noodlesSpacerItem.forEach(el => el.style.transform = 'translateX(80vw)');
+                noodlesSpacer2Item.forEach(el => el.style.transform = 'translateX(-80vw)');
+                foodElement.forEach(el => el.classList.remove('active'));
+                contactSection.style.transform = 'translateY(100vh)';
+
+            }
+            if(scrollPosition > 1400){
+                foodElement.forEach(el => el.classList.add('active'));
+                foodTitle.style.transform = 'translateX(0) rotate(-3deg)';
+            }
+            if(scrollPosition > 2100){
+                contactSection.style.transform = 'translateY(0vh)';
+                contactInfoItem.forEach(el => el.style.transform = 'translateX(-50vw)');
+            }
+            if(scrollPosition > 2600){
+                foodElement.forEach(el => el.classList.remove('active'));
+                foodTitle.style.transform = 'translateX(100vw) rotate(-3deg)';
+                contactInfoItem.forEach(el => el.style.transform = 'translateX(0vw)');
+            }
+            if(scrollPosition > 4600){
+                ownerContainer.style.transform = 'translateX(0)';
+                contactInfoItem.forEach(el => el.style.transform = 'translateX(-50vw)');
+            }
+            if(scrollPosition < 4600){
+                ownerContainer.style.transform = 'translateX(-100vw)';
+            }
+        }
+    }
+        
+        
+        if(window.innerWidth > 767 && window.innerWidth < 1367){
+        window.onscroll = function(){
+            let scrollPosition = window.scrollY;
+            if(scrollPosition < 600){
+                titleContainer.style.transform = 'translateY(' + scrollPosition * .07 + 'vh) rotate(-7deg)';
+                titleContainer.style.opacity = 1;
+                spacerSection.style.transform = 'translateY(100vh) rotate(1deg)';
+            }else{
+                titleContainer.style.opacity = 0;
+            }
+            if(scrollPosition > 100 & scrollPosition < 800){
+                favoritesList.classList.add('active');
+                foodTitle.style.transform = 'translateX(100vw) rotate(-3deg)';
+            }else{
+                favoritesList.classList.remove('active');
+            }
+            if(scrollPosition > 400){
+                noodlesSpacerItem.forEach(el => el.style.transform = 'translateX(0vw)');
+                noodlesSpacer2Item.forEach(el => el.style.transform = 'translateX(0vw)');
+                spacerSection.style.transform = 'translateY(0vh) rotate(1deg)';
+            }
+            if(scrollPosition < 400 || scrollPosition > 1300){
+                noodlesSpacerItem.forEach(el => el.style.transform = 'translateX(80vw)');
+                noodlesSpacer2Item.forEach(el => el.style.transform = 'translateX(-80vw)');
+                foodElement.forEach(el => el.classList.remove('active'));
+                contactSection.style.transform = 'translateY(100vh)';
+
+            }
+            if(scrollPosition > 1000){
+                foodElement.forEach(el => el.classList.add('active'));
+                foodTitle.style.transform = 'translateX(0) rotate(-3deg)';
+            }
+            if(scrollPosition > 1600){
+                contactSection.style.transform = 'translateY(0vh)';
+                contactInfoItem.forEach(el => el.style.transform = 'translateX(-50vw)');
+            }
+            if(scrollPosition > 2000){
+                foodElement.forEach(el => el.classList.remove('active'));
+                foodTitle.style.transform = 'translateX(100vw) rotate(-3deg)';
+                contactInfoItem.forEach(el => el.style.transform = 'translateX(0vw)');
+            }
+            if(scrollPosition > 2800){
+                ownerContainer.style.transform = 'translateX(0)';
+                contactInfoItem.forEach(el => el.style.transform = 'translateX(-50vw)');
+            }
+            if(scrollPosition < 3000){
+                ownerContainer.style.transform = 'translateX(-100vw)';
+            }
+        }
+    }
+        
+        if(window.innerWidth > 480 && window.innerWidth < 768){
+        window.onscroll = function(){
+            let scrollPosition = window.scrollY;
+            if(scrollPosition < 600){
+                titleContainer.style.transform = 'translateY(' + scrollPosition * .09 + 'vh) rotate(-7deg)';
+                titleContainer.style.opacity = 1;
+                spacerSection.style.transform = 'translateY(100vh) rotate(1deg)';
+            }else{
+                titleContainer.style.opacity = 0;
+            }
+            if(scrollPosition > 150 & scrollPosition < 1000){
+                favoritesList.classList.add('active');
+                foodTitle.style.transform = 'translateX(100vw) rotate(-3deg)';
+            }else{
+                favoritesList.classList.remove('active');
+            }
+            if(scrollPosition > 800){
+                noodlesSpacerItem.forEach(el => el.style.transform = 'translateX(0vw)');
+                noodlesSpacer2Item.forEach(el => el.style.transform = 'translateX(0vw)');
+                spacerSection.style.transform = 'translateY(0vh) rotate(1deg)';
+            }
+            if(scrollPosition < 900 || scrollPosition > 1300){
+                noodlesSpacerItem.forEach(el => el.style.transform = 'translateX(80vw)');
+                noodlesSpacer2Item.forEach(el => el.style.transform = 'translateX(-80vw)');
+                foodElement.forEach(el => el.classList.remove('active'));
+                contactSection.style.transform = 'translateY(100vh)';
+
+            }
+            if(scrollPosition > 1200){
+                foodElement.forEach(el => el.classList.add('active'));
+                foodTitle.style.transform = 'translateX(0) rotate(-3deg)';
+            }
+            if(scrollPosition > 1600){
+                contactSection.style.transform = 'translateY(0vh)';
+                contactInfoItem.forEach(el => el.style.transform = 'translateX(-50vw)');
+            }
+            if(scrollPosition > 2000){
+                foodElement.forEach(el => el.classList.remove('active'));
+                foodTitle.style.transform = 'translateX(100vw) rotate(-3deg)';
+                contactInfoItem.forEach(el => el.style.transform = 'translateX(0vw)');
+            }
+            if(scrollPosition > 3200){
+                ownerContainer.style.transform = 'translateX(0)';
+                contactInfoItem.forEach(el => el.style.transform = 'translateX(-50vw)');
+            }
+            if(scrollPosition < 3200){
+                ownerContainer.style.transform = 'translateX(-100vw)';
+            }
+        }
+    }
+        
+        if(window.innerWidth > 319 && window.innerWidth < 481){
+        window.onscroll = function(){
+            let scrollPosition = window.scrollY;
+            if(scrollPosition < 1000){
+                titleContainer.style.transform = 'translateY(' + scrollPosition * .07 + 'vh) rotate(-7deg)';
+                titleContainer.style.opacity = 1;
+                spacerSection.style.transform = 'translateY(100vh) rotate(1deg)';
+            }else{
+                titleContainer.style.opacity = 0;
+            }
+            if(scrollPosition > 150 & scrollPosition < 1400){
+                favoritesList.classList.add('active');
+                foodTitle.style.transform = 'translateX(100vw) rotate(-3deg)';
+            }else{
+                favoritesList.classList.remove('active');
+            }
+            if(scrollPosition > 700){
+                noodlesSpacerItem.forEach(el => el.style.transform = 'translateX(0vw)');
+                noodlesSpacer2Item.forEach(el => el.style.transform = 'translateX(0vw)');
+                spacerSection.style.transform = 'translateY(0vh) rotate(1deg)';
+                favoritesList.classList.remove('active');
+
+            }
+            if(scrollPosition < 1000 || scrollPosition > 1400){
+                noodlesSpacerItem.forEach(el => el.style.transform = 'translateX(100vw)');
+                noodlesSpacer2Item.forEach(el => el.style.transform = 'translateX(-100vw)');
+                foodElement.forEach(el => el.classList.remove('active'));
+                contactSection.style.transform = 'translateY(100vh)';
+
+            }
+            if(scrollPosition > 1200){
+                foodElement.forEach(el => el.classList.add('active'));
+                foodTitle.style.transform = 'translateX(0) rotate(-3deg)';
+            }
+            if(scrollPosition > 1700){
+                contactSection.style.transform = 'translateY(0vh)';
+                contactInfoItem.forEach(el => el.style.transform = 'translateX(-100vw)');
+            }
+            if(scrollPosition > 2000){
+                foodElement.forEach(el => el.classList.remove('active'));
+                foodTitle.style.transform = 'translateX(100vw) rotate(-3deg)';
+                contactInfoItem.forEach(el => el.style.transform = 'translateX(0vw)');
+            }
+            if(scrollPosition > 3200){
+                ownerContainer.style.transform = 'translateX(0)';
+                contactInfoItem.forEach(el => el.style.transform = 'translateX(-100vw)');
+            }
+            if(scrollPosition < 3500){
+                ownerContainer.style.transform = 'translateX(-100vw)';
+            }
+        }
+    }
+                   
+    
+    </script>
+    
+</html>
